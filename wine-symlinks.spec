@@ -12,7 +12,7 @@ Group:		Applications/Emulators
 License:	LGPL
 Requires:	wine
 #Requires:	wine-utils
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Provides symlinks from /usr/lib/wine/*.exe* to /var/lib/wine/windows -
