@@ -1,26 +1,32 @@
 # This spec file is released under the GNU General Public License version 2.0
 # (http://www.gnu.org/licenses/gpl.txt).
 
-%define	ver	1.0
-%define	rel	10
 %define _wine_cdrive	%{_datadir}/wine
 
-Summary:	Meta-package to create links to WINE replacements of windows programs.
+Summary:	Meta-package to create links to WINE replacements of Windows programs
+Summary(pl):	Metapakiet tworz±cy doiwi±zania do odpowiedników programów Windows zawartych w WINE
 Name:		wine-symlinks
-Version:	%ver
-Release:	%rel
-Requires:	wine, wine-utils
-Group:		Emulators
-######		Unknown group!
+Version:	1.0
+Release:	10
+Group:		Applications/Emulators
 License:	LGPL
+Requires:	wine
+#Requires:	wine-utils
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Provides symlinks from /usr/lib/wine/*.exe* to /var/lib/wine/windows -
 the standard place for WINE's C drive. This allows software installed
 with WINE to take advantage of WINE's replacements of common Windows
 utilities.
+
+%description -l pl
+Pakiet ten zawiera dowi±zania symboliczne z /usr/lib/wine/*.exe* do
+/var/lib/wine/windows - standardowej lokalizacji dysku C WINE.
+Umo¿liwia to wykorzystanie zawartych w WINE odpowiedników podstawowych
+programów narzêdziowych Windows przez programy zainstalowane pod WINE.
+
+%prep
 
 %install
 rm -rf $RPM_BUILD_ROOT
