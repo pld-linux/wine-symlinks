@@ -4,7 +4,7 @@
 %define _wine_cdrive	%{_datadir}/wine
 
 Summary:	Meta-package to create links to WINE replacements of Windows programs
-Summary(pl):	Metapakiet tworz±cy doiwi±zania do odpowiedników programów Windows zawartych w WINE
+Summary(pl):	Metapakiet tworz±cy dowi±zania do odpowiedników programów Windows zawartych w WINE
 Name:		wine-symlinks
 Version:	1.0
 Release:	10
