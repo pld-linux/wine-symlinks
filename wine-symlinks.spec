@@ -4,7 +4,7 @@
 %define _wine_cdrive	%{_datadir}/wine
 
 Summary:	Meta-package to create links to WINE replacements of Windows programs
-Summary(pl):	Metapakiet tworz眂y dowi眤ania do odpowiednik體 program體 Windows zawartych w WINE
+Summary(pl.UTF-8):   Metapakiet tworz膮cy dowi膮zania do odpowiednik贸w program贸w Windows zawartych w WINE
 Name:		wine-symlinks
 Version:	1.0
 Release:	10
@@ -20,11 +20,11 @@ the standard place for WINE's C drive. This allows software installed
 with WINE to take advantage of WINE's replacements of common Windows
 utilities.
 
-%description -l pl
-Pakiet ten zawiera dowi眤ania symboliczne z /usr/lib/wine/*.exe* do
+%description -l pl.UTF-8
+Pakiet ten zawiera dowi膮zania symboliczne z /usr/lib/wine/*.exe* do
 /var/lib/wine/windows - standardowej lokalizacji dysku C WINE.
-Umo縧iwia to wykorzystanie zawartych w WINE odpowiednik體 podstawowych
-program體 narz阣ziowych Windows przez programy zainstalowane pod WINE.
+Umo偶liwia to wykorzystanie zawartych w WINE odpowiednik贸w podstawowych
+program贸w narz臋dziowych Windows przez programy zainstalowane pod WINE.
 
 %prep
 
